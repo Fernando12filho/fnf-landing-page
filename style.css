@@ -1,0 +1,477 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Outfit', sans-serif;
+    font-family: 'Poppins', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    padding: 0;
+    margin: 0;
+    color: #FFF;
+}
+
+body {
+    background-color: #00030F;
+    color: white;
+
+}
+
+.imageContainer {
+    padding: 1.45rem 0 6.94rem;
+    background: linear-gradient(0deg, rgba(0, 3, 15, 1.20) 0%, rgba(0, 0, 0, 0.20) 100%), url("imagens/header1.jpg"), darkgray 80% / cover no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    width: 83%;
+    max-width: 2000px;
+    margin: auto;
+    margin-top: 30px;
+    align-items: flex-end;
+}
+
+.logo {
+    display: flex;
+    align-items: flex-end;
+    color: #FFF;
+    font-family: Inter;
+    font-size: 0.61938rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    width: 150px;
+}
+
+.logo img {
+    width: 3.6875rem;
+    height: 3.22156rem;
+    flex-shrink: 0;
+}
+
+ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-evenly;
+    font-size: 1rem;
+    color: #FFF;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    gap: 2.5rem;
+}
+
+li {
+    text-decoration: none;
+    padding-left: 10px;
+}
+
+#openDropdown{
+    display: none;
+}
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    width: 83%;
+    margin: auto;
+    justify-content: flex-start;
+    max-width: 2000px;
+    margin-top: 30px;
+}
+
+.heroDescription {
+    max-width: 800px;
+    height: auto;
+}
+
+.heroDescription h1 {
+    color: #FFF;
+    font-family: Poppins;
+    font-size: 2.5rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin: 30px 0;
+}
+
+.heroDescription p {
+    color: #FFF;
+    font-family: Poppins;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.75rem;
+    margin-bottom: 30px;
+    /* 175% */
+}
+
+
+.button button {
+    width: 12.625rem;
+    height: 3.25rem;
+    border-radius: 0.625rem;
+    background: var(--amerelo-risco, #FFC300);
+    flex-shrink: 0;
+    border-style: none;
+    margin-bottom: 10px;
+    max-width: 490px;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+#transparent {
+    background: rgba(0, 0, 0, 0.55);
+    border-style: solid;
+    color: white;
+}
+
+
+/*
+
+.categorias {
+    display: flex;
+    flex-direction: column;
+    width: 83%;
+    margin: auto;
+    max-width: 1440px;
+}
+
+.categorias h1 {
+    margin: 30px 0 30px;
+}
+
+.cards {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.card {
+    border-radius: 1.10569rem;
+    height: 24.00rem;
+    width: 19.50rem;
+    max-height: 350px;
+    max-width: 282px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-end;
+    margin-bottom: 30px;
+}
+
+.card img {
+    width: 100%;
+    align-self: center;
+    height: 3.79975rem;
+    flex-shrink: 0;
+    align-self: center;
+    margin-bottom: 90px;
+}
+
+.card p {
+    width: 100%;
+    height: fit-content;
+    color: #FFF;
+    font-size: 1.10569rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.card button {
+    padding: 0.62194rem 0.9675rem;
+    gap: 0.69106rem;
+    height: fit-content;
+    border-radius: 0;
+    border-style: none;
+    background-color: #FFC300;
+    margin-top: 10px;
+    width: 60%;
+}
+
+.cardFooter {
+    background: #00030F;
+    backdrop-filter: blur(35.38285827636719px);
+    width: 100%;
+    height: 30%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px;
+}
+
+#csgo {
+    border-radius: 1.10569rem;
+    background: linear-gradient(360deg, #120F14 0%, rgba(20, 20, 20, 0.00) 100%), url("imagens/csgoBG.png");
+    background-position: center;
+    background-size: cover;
+}
+
+*/
+
+
+.container-two-columns {
+    display: flex;
+    width: 83%;
+    max-width: 2000px;
+    margin: auto;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 6.06rem;
+    gap: 6.06rem;
+}
+
+.sobreNosImg {
+    flex-grow: 0.3;
+    flex-shrink: 1;
+    flex-basis: calc(25% - 10px);
+    background-image: url("/imagens/sobreNos.jpg");
+    background-size: cover;
+    background-position: 66%;
+    border-radius: 0.875rem;
+}
+
+.textContainer {
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: calc(25% - 10px);
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.textContainer h1 {
+    color: #FFF;
+    font-family: Poppins;
+    font-size: 3em;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin: 1rem 0;
+    width: 83%;
+    border-style: none;
+}
+
+.textContainer p {
+    color: rgba(255, 255, 255, 0.60);
+    font-family: Poppins;
+    font-size: 1em;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 2rem;
+    margin: 1rem 0;
+    width: 83%;
+    border-style: none;
+}
+
+.textContainer button {
+    width: 60%;
+    height: 50px;
+    border-radius: 0.625rem;
+    background: #FFC300;
+    border-style: none;
+    margin: 30px 0;
+}
+
+
+#becomeTutor h1 {
+    padding-left: 0;
+    margin-left: 0;
+}
+
+#becomeTutor p {
+    padding-left: 0;
+    margin-left: 0;
+}
+
+#textContainer-tutor {
+    margin-left: 0;
+}
+
+
+.imagem-aluno {
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: calc(25% - 10px);
+    background-image: url("/imagens/torneAluno.jpg");
+    background-size: cover;
+    background-position: 30%;
+    border-radius: 0.875rem;
+}
+
+.preFooter {
+    margin-top: 5rem;
+    display: flex;
+    justify-content: center;
+    padding: 7.13em calc(8px + 1.5625vw);
+    background: url("imagens/prefooter.jpg"), lightgray 0px -190.059px / 100% 192.023% no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.preFooterContainer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    min-width: 419px;
+    max-width: 500px;
+}
+
+.preFooterContainer button {
+    width: 60%;
+    height: 50px;
+    border-radius: 0.625rem;
+    background: #FFC300;
+    margin: auto;
+    border-style: none;
+}
+
+.preFooterContainer p {
+    padding: 1rem 0 3.31rem;
+}
+
+footer {
+    display: flex;
+    width: 83%;
+    max-width: 1440px;
+    margin: auto;
+    padding: 2rem 0 3rem;
+    justify-content: space-between;
+}
+
+footer p {
+    margin: 2rem 0 1.5rem;
+}
+
+footer ul {
+    justify-content: left;
+    padding: 1rem 0;
+}
+
+footer li{
+    list-style: none;
+}
+
+.box {
+    width: 25%;
+}
+
+.dropdownMenu{
+    display: none;
+}
+
+#becomeTutor{
+    align-items: center;
+}
+
+
+@media(max-width: 1340px) {
+    #openDropdown{
+        display:contents;
+    }
+    h1 {
+        color: #FFF;
+        font-family: Poppins;
+        font-size: 2rem;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+    }
+
+    .container-two-columns {
+        flex-wrap: wrap;
+        margin: auto;
+        flex-direction: column;
+        gap: 0;
+        margin-top: 30px;
+    }
+
+
+    .sobreNosImg {
+        width: 100%;
+        height: 350px;
+        flex-basis: auto;
+        background-position: top;
+    }
+
+    .imagem-aluno {
+        width: 100%;
+        height: 350px;
+        flex-basis: auto;
+        background-position: top;
+    }
+
+    .textContainer {
+        width: 100%;
+        align-items: flex-start;
+    }
+
+    .textContainer button {
+        width: 60%;
+        height: 50px;
+        border-radius: 0.625rem;
+        background: #FFC300;
+        border-style: none;
+    }
+
+    .container-two-columns h1 {
+        width: 100%;
+    }
+
+    .container-two-columns p {
+        width: 100%;
+    }
+
+    #container-torneAluno {
+        flex-direction: column-reverse;
+    }
+
+    .links {
+        display: none;
+    }
+
+
+}
+
+.dropdownMenu {
+    padding: 0;
+    position: fixed;
+    flex-direction: column;
+    margin: auto;
+    width: 100%;
+    border-radius: 0rem 0rem 1.25rem 1.25rem;
+    background: var(--White, #FFF);
+    align-items: center;
+    justify-content: center;
+}
+
+.dropdownLinks {
+    width: 100%;
+}
+
+.dropdownMenu ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.dropdownMenu li {
+    color: #00030F;
+}
+
+#closeDropdown {
+    width: 100%;
+    margin: auto;
+    background: var(--primary-white, #FFF);
+    box-shadow: 0px 3px 2px 0px rgba(0, 0, 0, 0.07), 0px 0px 10px 0px rgba(0, 0, 0, 0.05);
+}

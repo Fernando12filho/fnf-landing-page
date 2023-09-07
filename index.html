@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&family=Poppins:ital,wght@0,200;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+    </style>
+</head>
+
+<body onload="openCloseMenu()">
+    <div class="dropdownMenu" id="dropdownMenu">
+        <div class="dropdownLinks">
+            <div id="closeDropdown">
+                <a href="#" onclick="closeMenu()"><img src="/imagens/close.svg" alt="X"></a>
+            </div>
+
+            <ul>
+                <a href="#">
+                    <li>Home</li>
+                </a>
+                <a href="#">
+                    <li>Categorias</li>
+                </a>
+                <a href="#">
+                    <li>Sobre Nos</li>
+                </a>
+                <a href="#">
+                    <li>Tutores</li>
+                </a>
+                <a href="#">
+                    <li>Aluno</li>
+                </a>
+            </ul>
+        </div>
+    </div>
+
+    <div class="imageContainer">
+        <nav>
+            <div class="logo">
+                <img src="imagens/logo.svg">
+                <p>F&F Gaming Academy</p>
+            </div>
+
+            <div class="links">
+                <ul>
+                    <a href="#">
+                        <li>Home</li>
+                    </a>
+                    <a href="#">
+                        <li>Categorias</li>
+                    </a>
+                    <a href="#">
+                        <li>Sobre Nos</li>
+                    </a>
+                    <a href="#">
+                        <li>Tutores</li>
+                    </a>
+                    <a href="#">
+                        <li>Aluno</li>
+                    </a>
+                </ul>
+            </div>
+
+            <div class="hamburguer" id="openDropdown">
+                <a href="#" onclick="openMenu()"><img src="imagens/hamburguer.svg" alt="hamburguer"></a>
+            </div>
+        </nav>
+
+
+        <div class="hero">
+            <div class="heroDescription">
+                <h1>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima, molestiae eveniet. enim facilis
+                    soluta
+                    quas laudantium ipsa iure, impedit obcaecati dolore? Vel, odit.
+                </h1>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci minima quas natus ipsam numquam,
+                    nisi,
+                    rem aspernatur ex sed recusandae deleniti magni fugiat soluta atque ad fuga facilis est maiores.
+                </p>
+            </div>
+            <div class="button">
+                <button>Quero Ser Aluno</button>
+                <button id="transparent">Quero Ser Tutor</button>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!--
+    <div class="categorias">
+        <h1>
+            Esportes Eletronicos mais populares
+        </h1>
+
+        <div class="cards">
+            <div class="card" id="csgo">
+                <img src="/imagens/csgoLogo.svg" alt="CS:GO">
+                <div class="cardFooter">
+                    <p>CS:GO</p>
+                    <button>Quero ser Aluno</button>
+                </div>
+            </div>
+
+            <div class="card" id="csgo">
+                <img src="/imagens/csgoLogo.svg" alt="CS:GO">
+                <div class="cardFooter">
+                    <p>CS:GO</p>
+                    <button>Quero ser Aluno</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    -->
+
+    <div class="container-two-columns">
+        <div class="sobreNosImg">
+
+        </div>
+        <div class="textContainer">
+            <h1>
+                Sobre Nos
+            </h1>
+            <p>
+                A F&F Gaming Academy é uma plataforma de ensino especializada em jogos,
+                oferecendo oportunidades para jogadores de todos os níveis aprimorarem suas habilidades e conhecimentos.
+                Com uma equipe de tutores experientes e apaixonados por jogos, a academia se dedica a fornecer um
+                ambiente educacional divertido e envolvente. Nossa missão na F&F Gaming Academy é capacitar jogadores a
+                atingirem seu potencial máximo. Nossos tutores são selecionados cuidadosamente com base em seu
+                conhecimento profundo dos jogos, bem como em suas habilidades de ensino e capacidade de se conectar com
+                os alunos. Eles são apaixonados por compartilhar seus conhecimentos e experiências para ajudar os
+                jogadores a aprimorar suas técnicas, estratégias e compreensão geral dos jogos. Oferecemos tutoria
+                personalizada e adaptada às necessidades de cada aluno. Independentemente de ser um jogador iniciante em
+                busca de aprender conceitos básicos ou um jogador experiente procurando aprimorar habilidades avançadas,
+                temos programas de tutoria projetados especificamente para atender a cada nível de proficiência. Nossos
+                tutores trabalham de perto com os alunos, identificando suas áreas de melhoria, fornecendo orientações
+                individualizadas
+                e oferecendo recursos úteis para ajudar no desenvolvimento contínuo.
+            </p>
+        </div>
+    </div>
+
+    <div class="container-two-columns" id="becomeTutor">
+        <div class="textContainer" id="textContainer-tutor">
+            <h1>
+                Torne-se um professor de e-sports!
+            </h1>
+            <p>
+                Você gostaria de oferecer tutoria em algum jogo específico ou
+                em conceitos gerais de jogos? Por favor, forneça mais informações para que possamos
+                entender melhor como pode contribuir como tutor para a plataforma.
+            </p>
+            <button>Torne-se Tutor</button>
+        </div>
+
+        <div class="video">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/J87vsawKIIw?si=xytftlVqQvejHv6t"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen>
+            </iframe>
+        </div>
+
+    </div>
+
+    <div class="container-two-columns" id="container-torneAluno">
+
+        <div class="imagem-aluno">
+
+        </div>
+
+        <div class="textContainer">
+            <h1>
+                Seja um de nossos alunos!
+            </h1>
+            <p>
+                Registre se para encontrar o tutor que se encaixe melhor com voce,
+                participe de aulas ao vivo, com pessoas do mesmo level e dedicacao que vc tem,
+                forme times, entre em campeonatos online, crie uma rede de networking e se divirta.
+            </p>
+            <button>Torne-se Aluno</button>
+        </div>
+
+    </div>
+
+    <div class="preFooter">
+        <div class="preFooterContainer">
+            <h1>
+                Tenha uma experiência inesquecivel
+            </h1>
+            <p>
+                Então agora que conhece um pouco de nós que tal fazermos uma nova história juntos?
+                Bora lá! 👊🏻
+            </p>
+            <button>
+                Increva-se
+            </button>
+        </div>
+    </div>
+
+    <footer>
+        <div class="box">
+            <div class="logo">
+                <img src="imagens/logo.svg">
+                <p>F&F Gaming Academy</p>
+            </div>
+            <p>Melhore suas habilidades no seu tempo e um espaco seguro</p>
+            <img src="#" alt="facebook">
+            <img src="#" alt="instagram">
+            <img src="#" alt="twitter">
+        </div>
+        <div class="box">
+            <li>
+                <ul>Menus</ul>
+                <ul>Home</ul>
+                <ul>Categorias</ul>
+                <ul>Sobre Nos</ul>
+                <ul>Alunos</ul>
+                <ul>Tutores</ul>
+            </li>
+        </div>
+        <div class="box">
+            <li>
+                <ul>Politica</ul>
+                <ul>FAQ</ul>
+                <ul>Politica de privacidade</ul>
+                <ul>Ajuda </ul>
+            </li>
+        </div>
+        <div class="box">
+            <li>
+                <ul>Contato</ul>
+                <ul>contato@email.com</ul>
+                <ul>(999)9999-999</ul>
+            </li>
+        </div>
+    </footer>
+    <script src="script.js" async defer></script>
+</body>
+
+</html>
